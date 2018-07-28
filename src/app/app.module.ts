@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
@@ -13,6 +15,9 @@ import { RegisterComponent } from './login/register.component';
 import { SharedService } from './services/shared.service';
 import { SidebarService } from './services/sidebar.service';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +27,8 @@ import { SidebarService } from './services/sidebar.service';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

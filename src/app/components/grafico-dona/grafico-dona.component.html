@@ -1,0 +1,5 @@
+<h3 class="card-title">{{ ChartLegend }}</h3>
+<div style="display: block">
+    <canvas baseChart [data]="ChartData" [labels]="ChartLabels" [chartType]="ChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+    </canvas>
+</div>
